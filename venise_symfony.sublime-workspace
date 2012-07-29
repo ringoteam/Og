@@ -1,0 +1,1645 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"serialized"
+			],
+			[
+				"seriali",
+				"serialized"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"list",
+				"liste_item"
+			],
+			[
+				"todo",
+				"todoitem"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"Vns",
+				"VnsTodoBundle"
+			],
+			[
+				"S",
+				"Symfony"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"Fo",
+				"FormView"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"form",
+				"formView"
+			],
+			[
+				"back",
+				"backbone-forms"
+			],
+			[
+				"conso",
+				"console"
+			],
+			[
+				"Mk",
+				"MkdirPath"
+			],
+			[
+				"_",
+				"_REQUEST"
+			],
+			[
+				"var_",
+				"var_dump"
+			],
+			[
+				"var_d",
+				"var_dump  (function)"
+			],
+			[
+				"var_dup",
+				"var_dump  (function)"
+			],
+			[
+				"var_du",
+				"var_dump  (function)"
+			],
+			[
+				"w",
+				"weekday  (function)"
+			],
+			[
+				"pri",
+				"PrettyPrinter  (class)"
+			],
+			[
+				"pprint",
+				"pprint  (module)"
+			],
+			[
+				"time",
+				"time  (module)"
+			],
+			[
+				"pub",
+				"public  (keyword)"
+			],
+			[
+				"Veill",
+				"Veille"
+			],
+			[
+				"circe",
+				"circepadBundle"
+			],
+			[
+				"respo",
+				"Response  (namespace)"
+			],
+			[
+				"return",
+				"return  (keyword)"
+			],
+			[
+				"C",
+				"Controler  (namespace)"
+			],
+			[
+				"Controler",
+				"Symfony\\Bundle\\TwigBundle\\Controller\\ExceptionController  (class)"
+			],
+			[
+				"cr",
+				"Controller  (namespace)"
+			],
+			[
+				"fr",
+				"FrameworkBundle  (namespace)"
+			],
+			[
+				"s",
+				"Symfony  (namespace)"
+			],
+			[
+				"Frame",
+				"Symfony\\Bundle\\FrameworkBundle\\Console\\Shell  (class)"
+			],
+			[
+				"str_repl",
+				"str_replace"
+			],
+			[
+				"str_re",
+				"str_repeat  (function)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/Actor.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/Movie.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "include_path = \".:/Applications/mampstack-5.3.10-2/php/lib/php:/Users/pderoubaixenise_symfony/vendor/doctrine-common/libtrine/lib\":/Users/pderoubaix/Documents/dev/venise_symfony/vendor/doctrine-common/lib:/Users/pderoubaix/Documents/dev/venise_symfony/vendor/symfony",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Unix",
+				"name": "include_path = \".:/Applications/mampstack-5.3.10-2"
+			}
+		},
+		{
+			"file": "app/AppKernel.php",
+			"settings":
+			{
+				"buffer_size": 2032,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/ActorRepository.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/Producer.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/ProducerRepository.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Resources/config/Og-generator.yml",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/cache/dev/Admingenerated/OgAdminBundle/BaseOgController/ListController.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/AdminBundle/Resources/config/Og-generator.yml",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/AdminBundle/Entity/Actor.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/AdminBundle/Entity/ActorRepository.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/config.yml",
+			"settings":
+			{
+				"buffer_size": 1837,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/bundles/Admingenerator/GeneratorBundle/Menu/DefaultMenuBuilder.php",
+			"settings":
+			{
+				"buffer_size": 1317,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/bundles/WhiteOctober/PagerfantaBundle/Twig/PagerfantaExtension.php",
+			"settings":
+			{
+				"buffer_size": 3010,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "deps",
+			"settings":
+			{
+				"buffer_size": 76,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/autoload.php",
+			"settings":
+			{
+				"buffer_size": 2722,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/bundles/Sonata/AdminBundle/Resources/views/standard_layout.html.twig",
+			"settings":
+			{
+				"buffer_size": 9930,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Admin/ArtworkAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1748,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Resources/config/services.xml",
+			"settings":
+			{
+				"buffer_size": 1705,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/oeuvres.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/MovieRepository.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/oeuvresRepository.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Admin/ArtistAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1366,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Resources/config/doctrine/Artworks.orm.yml",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;\nSET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;\nSET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';\n\nCREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;\nUSE `og` ;\n\n-- -----------------------------------------------------\n-- Table `mydb`.`artists`\n-- -----------------------------------------------------\nDROP TABLE IF EXISTS `og`.`artists` ;\n\nCREATE  TABLE IF NOT EXISTS `og`.`artists` (\n  `id` INT NOT NULL AUTO_INCREMENT ,\n  `lastname` VARCHAR(45) NOT NULL ,\n  `firstname` VARCHAR(45) NOT NULL ,\n  `birthdate` DATETIME NULL ,\n  `deathdate` DATETIME NULL ,\n  PRIMARY KEY (`id`) )\nENGINE = InnoDB;\n\n\n-- -----------------------------------------------------\n-- Table `mydb`.`artworks`\n-- -----------------------------------------------------\nDROP TABLE IF EXISTS `og`.`artworks` ;\n\nCREATE  TABLE IF NOT EXISTS `og`.`artworks` (\n  `id` INT NOT NULL ,\n  `ArtworkName` VARCHAR(45) NOT NULL ,\n  `ProductionDate` VARCHAR(45) NULL ,\n  `artists_id` INT NOT NULL ,\n  PRIMARY KEY (`id`) ,\n  INDEX `fk_artworks_artists` (`artists_id` ASC) ,\n  CONSTRAINT `fk_artworks_artists`\n    FOREIGN KEY (`artists_id` )\n    REFERENCES `og`.`artists` (`id` )\n    ON DELETE NO ACTION\n    ON UPDATE NO ACTION)\nENGINE = InnoDB;\n\n\n\nSET SQL_MODE=@OLD_SQL_MODE;\nSET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;\nSET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;\n",
+			"settings":
+			{
+				"buffer_size": 1442,
+				"line_ending": "Unix",
+				"name": "SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHE"
+			}
+		},
+		{
+			"contents": "php app/console doctrine:mapping:convert xml ./src/Og/Bundle/AdminBundle/Resources/config/doctrine/metadata/orm --from-database --force",
+			"settings":
+			{
+				"buffer_size": 135,
+				"line_ending": "Unix",
+				"name": "php app/console doctrine:mapping:convert xml ./src"
+			}
+		},
+		{
+			"contents": "Og\\Bundle\\AdminBundle\\Entity\\Artist:\n  type: entity\n  table: artist\n  id:\n      id:\n          type: integer\n          generator: { strategy: AUTO }\n  fields:\n    LastName:\n        type: string(100)\n    FirstName:\n        type: string(100)",
+			"file": "src/Og/Bundle/AdminBundle/Resources/config/doctrine/Artist.orm.yml",
+			"file_size": 238,
+			"file_write_time": 1343511241000000,
+			"settings":
+			{
+				"buffer_size": 238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace Og\\Bundle\\AdminBundle\\Entity;\n\nuse Doctrine\\ORM\\Mapping as ORM;\n\n/**\n * Og\\Bundle\\AdminBundle\\Entity\\Artist\n */\nclass Artist\n{\n    /**\n     * @var integer $id\n     */\n    private $id;\n\n    /**\n     * @var string $LastName\n     */\n    private $LastName;\n\n    /**\n     * @var string $FirstName\n     */\n    private $FirstName;\n\n\n    /**\n     * Get id\n     *\n     * @return integer \n     */\n    public function getId()\n    {\n        return $this->id;\n    }\n\n    /**\n     * Set LastName\n     *\n     * @param string $lastName\n     */\n    public function setLastName($lastName)\n    {\n        $this->LastName = $lastName;\n    }\n\n    /**\n     * Get LastName\n     *\n     * @return string \n     */\n    public function getLastName()\n    {\n        return $this->LastName;\n    }\n\n    /**\n     * Set FirstName\n     *\n     * @param string $firstName\n     */\n    public function setFirstName($firstName)\n    {\n        $this->FirstName = $firstName;\n    }\n\n    /**\n     * Get FirstName\n     *\n     * @return string \n     */\n    public function getFirstName()\n    {\n        return $this->FirstName;\n    }\n}",
+			"file": "src/Og/Bundle/AdminBundle/Entity/Artist.php",
+			"file_size": 1104,
+			"file_write_time": 1343514582000000,
+			"settings":
+			{
+				"buffer_size": 1104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/Artworks.php",
+			"settings":
+			{
+				"buffer_size": 8053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Og/Bundle/AdminBundle/Entity/Artists.php",
+			"settings":
+			{
+				"buffer_size": 2520,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 115.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Admin/OeuvresAdmin.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Admin/MovieAdmin.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/TodoBundle/VnsTodoBundle.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/TodoBundle/Resources/config/routing.yml",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/TodoBundle/Resources/views/Default/index.html.twig",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/TodoBundle/Controller/TodoController.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/app/Resources/views/layout.html.twig",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/DashBoardBundle/Resources/config/routing.yml",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/DashBoardBundle/Controller/DefaultController.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/DashBoardBundle/Resources/views/Default/index.html.twig",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/app/config/parameters.ini",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/TodoBundle/Entity/todoItem.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/web/assets/js/todos.js",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/Business/Normalizer/JsonClassHintingNormalizer.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/app/check.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/app/autoload.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/app/AppKernel.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/app/config/config.yml",
+		"/Users/patrick deroubaix/Documents/dev/AdmingeneratorIpsum/src/Admingenerator/DemoBundle/Resources/config/generator.yml",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/deps",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Entity/Actor.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/OgAdminBundle.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Entity/ActorRepository.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Entity/Movie.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Entity/MovieRepository.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Entity/Producer.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Entity/ProducerRepository.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/app/config/routing.yml",
+		"/Users/patrick deroubaix/Documents/dev/AdmingeneratorIpsum/app/config/routing.yml",
+		"/Users/patrick deroubaix/Documents/dev/AdmingeneratorIpsum/app/AppKernel.php",
+		"/Users/patrick deroubaix/Documents/dev/AdmingeneratorIpsum/app/config/config.yml",
+		"/Users/patrick deroubaix/Documents/dev/AdmingeneratorIpsum/app/autoload.php",
+		"/Users/patrick deroubaix/Documents/dev/AdmingeneratorIpsum/app/config/config_dev.yml",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Og/Bundle/AdminBundle/Resources/config/Og-generator.yml",
+		"/Users/patrick deroubaix/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/Business/JsonClassHintingNormalizer.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/TodoBundle/Controller/TodoListController.php",
+		"/Users/patrick deroubaix/Documents/dev/venise_symfony/src/Vns/TodoBundle/Controller/DefaultController.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/views/todolist/index.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/config/development/config.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/public/assets/js/backbone-forms.js",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/views/formback/index.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/public/assets/js/todo.js",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/classes/controller/formback.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/classes/controller/form.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/classes/view/welcome/hello.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/classes/view/form/index.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/views/form/index.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/public/assets/js/forms-test.js",
+		"/Users/patrick deroubaix/Documents/dev/venise/fuel/app/config/config.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/public/index.php",
+		"/Users/patrick deroubaix/Documents/dev/venise/venise.sublime-project",
+		"/Users/patrick deroubaix/Downloads/test_notify.php",
+		"/Users/patrick deroubaix/Documents/dev/leaderboard/web.xml",
+		"/Users/patrick deroubaix/Documents/dev/leaderboard/notify.xml",
+		"/Users/patrick deroubaix/Documents/dev/leaderboard/activemq.xml",
+		"/Users/patrick deroubaix/Documents/dev/leaderboard/leaderboard.js",
+		"/Volumes/10.255.252.224/teletoon/application/sites/backend/controllers/Media.php",
+		"/Volumes/dev-lnx-03/websvn/templates/betd/directory.tmpl",
+		"/Volumes/10.255.252.224/canal/lib/test_patrick.php",
+		"/Users/patrick deroubaix/Downloads/solrconfig.xml",
+		"/Volumes/dev-lnx-03/websvn/listing.php",
+		"/Volumes/dev-lnx-03/websvn/betd/BDSVN.class.php",
+		"/Volumes/dev-lnx-03/websvn/betd/SVNRepositoryBETD.class.php",
+		"/Volumes/dev-lnx-03/websvn/betd_copy_dir.php",
+		"/Volumes/dev-lnx-03/websvn/betd_build.php",
+		"/Volumes/dev-lnx-03/websvn/betd_branche.php",
+		"/Volumes/dev-lnx-03/websvn/betd_tag.php",
+		"/Volumes/dev-lnx-03/websvn/betd/betd_common.php",
+		"/Volumes/dev-lnx-03/websvn/betd_delivery.php",
+		"/Users/patrick deroubaix/Downloads/420-preprod-media.cuisine(1).tv",
+		"/Users/patrick deroubaix/Downloads/test_sessions.php",
+		"/Users/patrick deroubaix/Documents/dev/monitor_session.rb",
+		"/Users/patrick deroubaix/Documents/dev/apache-solr-3.5.0/example/multicore/ctv/conf/solrconfig.xml",
+		"/Users/patrick deroubaix/Documents/dev/apache-solr-3.5.0/example/multicore/solr.xml",
+		"/Users/patrick deroubaix/Documents/dev/apache-solr-3.5.0/example/multicore/ctv/import2.txt",
+		"/Users/patrick deroubaix/Documents/dev/apache-solr-3.5.0/example/multicore/ctv/import1.xml",
+		"/Users/patrick deroubaix/Documents/dev/apache-solr-3.5.0/example/multicore/ctv/conf/schema.xml",
+		"/Volumes/10.255.252.224/canalpfv/application/modules/sso/services/MonCompte.php",
+		"/Volumes/10.255.252.224/canalpfv/library/Canal/Sso/Logger.class.php",
+		"/Users/patrick deroubaix/Downloads/Logs Production 09032012/infinityReloadHeader.log_20120309040203",
+		"/Users/patrick deroubaix/Downloads/Logs Production 09032012/infinityatgws.log_20120309040204",
+		"/Volumes/10.255.252.224/canal5/lib/cache_tools/Cache.class.php",
+		"/Users/patrick deroubaix/Documents/dev/apache-solr-3.5.0/example/multicore/core0/conf/schema.xml",
+		"/Users/patrick deroubaix/Downloads/infinityicarews.log",
+		"/Users/patrick deroubaix/Downloads/infinitycgawebws.log",
+		"/Users/patrick deroubaix/Downloads/infinityorchestrationws.log",
+		"/Users/patrick deroubaix/Documents/dev/octopress/source/_layouts/page.html",
+		"/Users/patrick deroubaix/Downloads/infinityorchestrationws.log.80",
+		"/Users/patrick deroubaix/Documents/dev/octopress/source/_posts/2012-02-27-installation-doctopress.markdown",
+		"/Users/patrick deroubaix/Documents/dev/todolist/src/app.php",
+		"/Users/patrick deroubaix/Documents/dev/todolist/src/autoload.php",
+		"/Users/patrick deroubaix/Documents/dev/todolist/web/index.php",
+		"/Users/patrick deroubaix/Documents/dev/todolist/index.php",
+		"/Users/patrick deroubaix/Documents/dev/todolist/.htaccess",
+		"/Users/patrick deroubaix/Documents/dev/worker.py",
+		"/Volumes/10.255.252.224/canalpfv/application/modules/livetv/models/schemes/Programme.xsd",
+		"/Users/patrick deroubaix/Documents/dev/maveille/src/circe/padBundle/Resources/views/Veille/index.html.twig",
+		"/Users/patrick deroubaix/Documents/dev/maveille/src/circe/padBundle/Controller/VeilleController.php",
+		"/Users/patrick deroubaix/Documents/dev/maveille/src/circe/padBundle/Resources/config/routing.yml",
+		"/Users/patrick deroubaix/Documents/dev/maveille/src/circe/padBundle/Controller/VeilleControler.php",
+		"/Users/patrick deroubaix/Documents/dev/circe.sublime-project",
+		"/Users/patrick deroubaix/Documents/local.ini.php",
+		"/Users/patrick deroubaix/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/patrick deroubaix/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/patrick deroubaix/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/Users/patrick deroubaix/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"')\n",
+			"Admingenerator\\DemoBundle\\Entity",
+			"Admingenerator\\DemoBundle\\Entity\\",
+			"curr",
+			"  \n",
+			"Admingenerator\\DemoBundle",
+			"OMD",
+			"char",
+			"item_order\norder",
+			"order",
+			"24",
+			"inherit",
+			"export_var",
+			"var_dump",
+			"filecheckoutlink",
+			"delivr",
+			"anu",
+			"annu",
+			"REALBRANCHES_TESTING",
+			"commit",
+			"exec",
+			"copy",
+			"hasReadAccess",
+			"showDirFiles",
+			"showTreeDir",
+			"status",
+			"find",
+			"loggerWS",
+			"martine",
+			"comple"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Og\\Bundle\\AdminBundle\\Entity",
+			"Og\\Bundle\\AdminBundle"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 26,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/Og/Bundle/AdminBundle/Entity/Actor.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Og/Bundle/AdminBundle/Entity/Movie.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "include_path = \".:/Applications/mampstack-5.3.10-2",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/AppKernel.php",
+					"settings":
+					{
+						"buffer_size": 2032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1213,
+								1213
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 35.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								13
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/Og/Bundle/AdminBundle/Entity/ActorRepository.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/Og/Bundle/AdminBundle/Entity/Producer.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/Og/Bundle/AdminBundle/Entity/ProducerRepository.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/Og/Bundle/AdminBundle/Resources/config/Og-generator.yml",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/cache/dev/Admingenerated/OgAdminBundle/BaseOgController/ListController.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/Og/AdminBundle/Resources/config/Og-generator.yml",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/Og/AdminBundle/Entity/Actor.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/Og/AdminBundle/Entity/ActorRepository.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/config/config.yml",
+					"settings":
+					{
+						"buffer_size": 1837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "vendor/bundles/Admingenerator/GeneratorBundle/Menu/DefaultMenuBuilder.php",
+					"settings":
+					{
+						"buffer_size": 1317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								776,
+								776
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "vendor/bundles/WhiteOctober/PagerfantaBundle/Twig/PagerfantaExtension.php",
+					"settings":
+					{
+						"buffer_size": 3010,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 659.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "deps",
+					"settings":
+					{
+						"buffer_size": 76,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/autoload.php",
+					"settings":
+					{
+						"buffer_size": 2722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1174,
+								1174
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "vendor/bundles/Sonata/AdminBundle/Resources/views/standard_layout.html.twig",
+					"settings":
+					{
+						"buffer_size": 9930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "src/Og/Bundle/AdminBundle/Admin/ArtworkAdmin.php",
+					"settings":
+					{
+						"buffer_size": 1748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "src/Og/Bundle/AdminBundle/Resources/config/services.xml",
+					"settings":
+					{
+						"buffer_size": 1705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "src/Og/Bundle/AdminBundle/Entity/oeuvres.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "src/Og/Bundle/AdminBundle/Entity/MovieRepository.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "src/Og/Bundle/AdminBundle/Entity/oeuvresRepository.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "src/Og/Bundle/AdminBundle/Admin/ArtistAdmin.php",
+					"settings":
+					{
+						"buffer_size": 1366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 50.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "src/Og/Bundle/AdminBundle/Resources/config/doctrine/Artworks.orm.yml",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"settings":
+					{
+						"buffer_size": 1442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								547
+							]
+						],
+						"settings":
+						{
+							"auto_name": "SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHE",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "php app/console doctrine:mapping:convert xml ./src",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "src/Og/Bundle/AdminBundle/Resources/config/doctrine/Artist.orm.yml",
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								147
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "src/Og/Bundle/AdminBundle/Entity/Artist.php",
+					"settings":
+					{
+						"buffer_size": 1104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "src/Og/Bundle/AdminBundle/Entity/Artworks.php",
+					"settings":
+					{
+						"buffer_size": 8053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 47.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "src/Og/Bundle/AdminBundle/Entity/Artists.php",
+					"settings":
+					{
+						"buffer_size": 2520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1520.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 331.0,
+	"status_bar_visible": true
+}

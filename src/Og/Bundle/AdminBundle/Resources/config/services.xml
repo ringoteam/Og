@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+       <service id="sonata.admin.artist" class="Og\Bundle\AdminBundle\Admin\ArtistAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Artists"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Artists</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+      <service id="sonata.admin.artwork" class="Og\Bundle\AdminBundle\Admin\ArtworkAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Artworks"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Artworks</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+            <service id="sonata.admin.purchase" class="Og\Bundle\AdminBundle\Admin\PurchaseAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Purchases"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Purchase</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+   </services>
+</container>
