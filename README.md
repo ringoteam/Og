@@ -1,4 +1,1 @@
-Og
-==
-
-Og-prototype
+OG-prototype
