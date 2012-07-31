@@ -1,0 +1,32 @@
+<?php
+
+namespace Og\Bundle\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Og\Bundle\AdminBundle\Entity\Productionstatus
+ *
+ * @ORM\Table(name="productionstatus")
+ * @ORM\Entity
+ */
+class Productionstatus
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $label
+     *
+     * @ORM\Column(name="label", type="string", length=50, nullable=false)
+     */
+    private $label;
+
+
+}

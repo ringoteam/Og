@@ -1,0 +1,136 @@
+<?php
+
+namespace Og\Bundle\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Og\Bundle\AdminBundle\Entity\Artworks
+ *
+ * @ORM\Table(name="artworks")
+ * @ORM\Entity
+ */
+class Artworks
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $artworkname
+     *
+     * @ORM\Column(name="ArtworkName", type="string", length=45, nullable=false)
+     */
+    private $artworkname;
+
+    /**
+     * @var datetime $productiondate
+     *
+     * @ORM\Column(name="ProductionDate", type="datetime", nullable=false)
+     */
+    private $productiondate;
+
+    /**
+     * @var integer $productid
+     *
+     * @ORM\Column(name="ProductID", type="integer", nullable=true)
+     */
+    private $productid;
+
+    /**
+     * @var smallint $edition
+     *
+     * @ORM\Column(name="Edition", type="smallint", nullable=true)
+     */
+    private $edition;
+
+    /**
+     * @var integer $editionnumber
+     *
+     * @ORM\Column(name="EditionNumber", type="integer", nullable=true)
+     */
+    private $editionnumber;
+
+    /**
+     * @var string $region
+     *
+     * @ORM\Column(name="Region", type="string", length=80, nullable=true)
+     */
+    private $region;
+
+    /**
+     * @var string $category
+     *
+     * @ORM\Column(name="Category", type="string", length=100, nullable=true)
+     */
+    private $category;
+
+    /**
+     * @var integer $masterartwork
+     *
+     * @ORM\Column(name="MasterArtwork", type="integer", nullable=true)
+     */
+    private $masterartwork;
+
+    /**
+     * @var integer $gift
+     *
+     * @ORM\Column(name="gift", type="integer", nullable=true)
+     */
+    private $gift;
+
+    /**
+     * @var string $medium
+     *
+     * @ORM\Column(name="Medium", type="string", length=100, nullable=true)
+     */
+    private $medium;
+
+    /**
+     * @var integer $sizecm
+     *
+     * @ORM\Column(name="Sizecm", type="integer", nullable=true)
+     */
+    private $sizecm;
+
+    /**
+     * @var integer $sizeinch
+     *
+     * @ORM\Column(name="SizeInch", type="integer", nullable=true)
+     */
+    private $sizeinch;
+
+    /**
+     * @var text $remark
+     *
+     * @ORM\Column(name="Remark", type="text", nullable=true)
+     */
+    private $remark;
+
+    /**
+     * @var Artists
+     *
+     * @ORM\ManyToOne(targetEntity="Artists")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="artists_id", referencedColumnName="id")
+     * })
+     */
+    private $artists;
+
+    /**
+     * @var Productionstatus
+     *
+     * @ORM\ManyToOne(targetEntity="Productionstatus")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="productionStatus_id", referencedColumnName="id")
+     * })
+     */
+    private $productionstatus;
+
+
+}
