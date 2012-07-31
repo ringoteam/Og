@@ -89,7 +89,7 @@ ENGINE = InnoDB;
 -- Table `og`.`civility`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`civility` (
-  `CivilityId` INT NOT NULL ,
+  `CivilityId` INT NOT NULL AUTO_INCREMENT ,
   `CivilityName` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`CivilityId`) )
 ENGINE = InnoDB;
@@ -99,7 +99,7 @@ ENGINE = InnoDB;
 -- Table `og`.`country`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`country` (
-  `CountryId` INT NOT NULL ,
+  `CountryId` INT NOT NULL AUTO_INCREMENT,
   `CountryName` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`CountryId`) )
 ENGINE = InnoDB;
@@ -109,7 +109,7 @@ ENGINE = InnoDB;
 -- Table `og`.`state`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`state` (
-  `StateId` INT NOT NULL ,
+  `StateId` INT NOT NULL AUTO_INCREMENT,
   `StateName` VARCHAR(45) NOT NULL ,
   `CountryId` INT NOT NULL ,
   PRIMARY KEY (`StateId`) ,
