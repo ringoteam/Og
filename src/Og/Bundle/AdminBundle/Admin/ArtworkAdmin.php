@@ -27,7 +27,6 @@ class ArtworkAdmin extends Admin
             ->add('sizecm')
             ->add('sizeinch')
             ->add('remark')
-            //->add('purchase', 'sonata_type_model',array(), array('edit' => 'list'))
             ->end()
             ->with('Purchase',array('collapsed' => true))
             //->add('purchase', 'sonata_type_model')
