@@ -113,9 +113,9 @@ class Artworks
     private $remark;
 
     /**
-     * @var Artists
+     * @var Artist
      *
-     * @ORM\ManyToOne(targetEntity="Artists")
+     * @ORM\ManyToOne(targetEntity="Artist")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="artists_id", referencedColumnName="id")
      * })
