@@ -18,6 +18,10 @@ CREATE  TABLE IF NOT EXISTS `og`.`artists` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = latin1;
 
+INSERT INTO `artists` (`id`, `lastname`, `firstname`, `birthdate`, `deathdate`) VALUES
+(1, 'prénom', 'artiste 1', '2008-01-01 00:00:00', '2007-01-01 00:00:00'),
+(2, 'ou pas', 'c''est mon prénom', '2007-01-01 00:00:00', '2010-01-01 00:00:00'),
+(3, 'dali', 'salvador', '2007-01-01 00:00:00', '2009-01-01 00:00:00');
 
 -- -----------------------------------------------------
 -- Table `og`.`productionStatus`
@@ -234,6 +238,8 @@ CREATE UNIQUE INDEX `UNIQ_C560D76192FC23A8` ON `og`.`fos_user_user` (`username_c
 
 CREATE UNIQUE INDEX `UNIQ_C560D761A0D96FBF` ON `og`.`fos_user_user` (`email_canonical` ASC) ;
 
+INSERT INTO `fos_user_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `locked`, `expired`, `expires_at`, `confirmation_token`, `password_requested_at`, `roles`, `credentials_expired`, `credentials_expire_at`, `created_at`, `updated_at`, `date_of_birth`, `firstname`, `lastname`, `website`, `biography`, `gender`, `locale`, `timezone`, `phone`, `facebook_uid`, `facebook_name`, `facebook_data`, `twitter_uid`, `twitter_name`, `twitter_data`, `gplus_uid`, `gplus_name`, `gplus_data`, `token`, `two_step_code`) VALUES
+(1, 'admin', 'admin', 'admin@example.com', 'admin@example.com', 1, 'mpe1kgfsvfkggcwok0ww0wwc4wkckc0', 'd53tVSrrud+ABqSTBZ6vI731E6iHPVA4G30dNTIllcC3BUSjuBLwO1vOLCBDQOlduvx+pxyR7P2q+A8oC5hX1Q==', '2012-07-30 00:53:31', 0, 0, NULL, '34y5ldm08saocwc0c84g0sw80wkgw4kkws4s04g40gc08ksocc', NULL, 'a:1:{i:0;s:16:"ROLE_SUPER_ADMIN";}', 0, NULL, '2012-07-29 07:44:30', '2012-07-30 00:53:31', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'null', NULL, NULL, 'null', NULL, NULL, 'null', NULL, NULL);
 
 -- -----------------------------------------------------
 -- Table `og`.`fos_user_user_group`
