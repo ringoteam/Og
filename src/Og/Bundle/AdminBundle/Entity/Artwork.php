@@ -5,9 +5,9 @@ namespace Og\Bundle\AdminBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Og\Bundle\AdminBundle\Entity\Artworks
+ * Og\Bundle\AdminBundle\Entity\Artwork
  *
- * @ORM\Table(name="artworks")
+ * @ORM\Table(name="artwork")
  * @ORM\Entity
  */
 class Artworks

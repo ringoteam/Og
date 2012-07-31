@@ -7,7 +7,7 @@
        <service id="sonata.admin.artist" class="Og\Bundle\AdminBundle\Admin\ArtistAdmin">
           <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Artists"/>
           <argument />
-          <argument>Og\Bundle\AdminBundle\Entity\Artists</argument>
+          <argument>Og\Bundle\AdminBundle\Entity\Artist</argument>
           <argument>SonataAdminBundle:CRUD</argument>
           <call method="setTranslationDomain">
               <argument>Mon admin oeuvre</argument>
@@ -16,13 +16,13 @@
       <service id="sonata.admin.artwork" class="Og\Bundle\AdminBundle\Admin\ArtworkAdmin">
           <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Artworks"/>
           <argument />
-          <argument>Og\Bundle\AdminBundle\Entity\Artworks</argument>
+          <argument>Og\Bundle\AdminBundle\Entity\Artwork</argument>
           <argument>SonataAdminBundle:CRUD</argument>
           <call method="setTranslationDomain">
               <argument>Mon admin oeuvre</argument>
           </call>
       </service>
-            <service id="sonata.admin.purchase" class="Og\Bundle\AdminBundle\Admin\PurchaseAdmin">
+      <service id="sonata.admin.purchase" class="Og\Bundle\AdminBundle\Admin\PurchaseAdmin">
           <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Purchases"/>
           <argument />
           <argument>Og\Bundle\AdminBundle\Entity\Purchase</argument>
@@ -31,5 +31,23 @@
               <argument>Mon admin oeuvre</argument>
           </call>
       </service>
-   </services>
+      <service id="sonata.admin.country" class="Og\Bundle\AdminBundle\Admin\CountryAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Countries"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Country</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+      <service id="sonata.admin.customer" class="Og\Bundle\AdminBundle\Admin\CustomerAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Customers" label="Customers"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Customer</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+    </services>
 </container>
