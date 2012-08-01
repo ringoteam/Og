@@ -65,5 +65,6 @@ class CustomerAdmin extends Admin
             ->end()
         ;
     }
+    
 } 
 ?>
