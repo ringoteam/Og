@@ -14,8 +14,8 @@ class ArtistAdmin extends Admin
         $formMapper
             ->add('firstname')
             ->add('lastname')
-            ->add('birthdate','date')
-            ->add('deathdate','date')
+            ->add('birthdate','birthday')
+            ->add('deathdate','birthday')
             
             
         ;

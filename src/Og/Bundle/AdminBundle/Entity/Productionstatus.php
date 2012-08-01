@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Og\Bundle\AdminBundle\Entity\Productionstatus
  *
- * @ORM\Table(name="productionstatus")
+ * @ORM\Table(name="productionStatus")
  * @ORM\Entity
  */
 class Productionstatus

@@ -40,6 +40,24 @@
               <argument>Mon admin oeuvre</argument>
           </call>
       </service>
+      <service id="sonata.admin.state" class="Og\Bundle\AdminBundle\Admin\StateAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="States"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\State</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+      <service id="sonata.admin.civility" class="Og\Bundle\AdminBundle\Admin\CivilityAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Civility"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Civility</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
       <service id="sonata.admin.customer" class="Og\Bundle\AdminBundle\Admin\CustomerAdmin">
           <tag name="sonata.admin" manager_type="orm" group="Customers" label="Customers"/>
           <argument />

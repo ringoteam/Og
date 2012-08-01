@@ -37,7 +37,7 @@ class CustomerAdmin extends Admin
     {
         $datagridMapper
           ->add('FirstName')
-            ->add('LastName')
+          ->add('LastName')
             
         ;
     }
@@ -46,8 +46,8 @@ class CustomerAdmin extends Admin
     {
         $listMapper
            ->add('FirstName')
-            ->add('LastName')
-            ->add('_action', 'actions', array(
+           ->add('LastName')
+           ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
                     'delete' => array(),

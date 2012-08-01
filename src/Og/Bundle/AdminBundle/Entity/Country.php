@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Country
 {
     /**
-     * @var integer $CountryId
-     * 
-     * @ORM\Column(name="CountryId", type="integer", nullable=false)
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $CountryId;
+    private $id;
 
     /**
      * @var string $CountryName
@@ -30,13 +30,13 @@ class Country
 
     
     /**
-     * Get CountryId
+     * Get id
      *
      * @return integer 
      */
-    public function getCountryId()
+    public function getId()
     {
-        return $this->CountryId;
+        return $this->id;
     }
 
     /**
@@ -57,5 +57,9 @@ class Country
     public function getCountryName()
     {
         return $this->CountryName;
+    }
+    
+    public function __toString() {
+        return $this->getCountryName();
     }
 }

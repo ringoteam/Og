@@ -14,13 +14,13 @@ class Customer
 {
     
     /**
-     * @var integer $CustomerId
+     * @var integer $id
      * 
-     * @ORM\Column(name="CustomerId", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $CustomerId;
+    private $id;
 
     /**
      * @var string $LastName
@@ -128,35 +128,46 @@ class Customer
     private $Remark;
 
     /**
-     * @var integer $Title
-     * 
-     * @ORM\Column(name="Title", type="integer", length=45, nullable=false)
+     * @var Title
+     *
+     * @ORM\ManyToOne(targetEntity="Civility")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Title", referencedColumnName="id")
+     * })
      */
     private $Title;
 
     /**
-     * @var integer $Country
-     * 
-     * @ORM\Column(name="Country", type="integer", length=45, nullable=false)
+     * @var Country
+     *
+     * @ORM\ManyToOne(targetEntity="Country")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Country", referencedColumnName="id")
+     * })
      */
     private $Country;
     
     /**
-     * @var integer $State
      * 
-     * @ORM\Column(name="State", type="integer", length=45, nullable=false)
+     * @var State
+     *
+     * @ORM\ManyToOne(targetEntity="State")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="State", referencedColumnName="id")
+     * })
+     *
      */
     private $State;
 
         
     /**
-     * Get CustomerId
+     * Get id
      *
      * @return integer 
      */
-    public function getCustomerId()
+    public function getId()
     {
-        return $this->CustomerId;
+        return $this->id;
     }
 
     /**
@@ -464,7 +475,7 @@ class Customer
      *
      * @param integer $title
      */
-    public function setTitle(\Og\Bundle\AdminBundle\Entity\Civilities $title)
+    public function setTitle(\Og\Bundle\AdminBundle\Entity\Civility $title)
     {
         $this->Title = $title;
     }
@@ -472,7 +483,7 @@ class Customer
     /**
      * Get Title
      *
-     * @return Og\Bundle\AdminBundle\Entity\Civilities 
+     * @return Og\Bundle\AdminBundle\Entity\Civility 
      */
     public function getTitle()
     {
@@ -484,7 +495,7 @@ class Customer
      *
      * @param integer $country
      */
-    public function setCountry(\Og\Bundle\AdminBundle\Entity\Countries $country)
+    public function setCountry(\Og\Bundle\AdminBundle\Entity\Country $country)
     {
         $this->Country = $country;
     }
@@ -492,7 +503,7 @@ class Customer
     /**
      * Get Country
      *
-     * @return Og\Bundle\AdminBundle\Entity\Countries 
+     * @return Og\Bundle\AdminBundle\Entity\Country 
      */
     public function getCountry()
     {
@@ -504,7 +515,7 @@ class Customer
      *
      * @param integer $state
      */
-    public function setState(\Og\Bundle\AdminBundle\Entity\States $state)
+    public function setState(\Og\Bundle\AdminBundle\Entity\State $state)
     {
         $this->State = $state;
     }
@@ -512,7 +523,7 @@ class Customer
     /**
      * Get State
      *
-     * @return Og\Bundle\AdminBundle\Entity\States 
+     * @return Og\Bundle\AdminBundle\Entity\State 
      */
     public function getState()
     {
