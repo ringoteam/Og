@@ -14,13 +14,13 @@ class Customer
 {
     
     /**
-     * @var integer $CustomerId
+     * @var integer $id
      * 
-     * @ORM\Column(name="CustomerId", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $CustomerId;
+    private $id;
 
     /**
      * @var string $LastName
@@ -150,13 +150,13 @@ class Customer
 
         
     /**
-     * Get CustomerId
+     * Get id
      *
      * @return integer 
      */
-    public function getCustomerId()
+    public function getId()
     {
-        return $this->CustomerId;
+        return $this->id;
     }
 
     /**
