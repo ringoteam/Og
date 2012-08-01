@@ -104,6 +104,10 @@
     git=http://github.com/sonata-project/SonatajQueryBundle.git
     target=/bundles/Sonata/jQueryBundle
 
+[SonataDoctrineORMAdminBundle]
+    git=git://github.com/sonata-project/SonataDoctrineORMAdminBundle.git
+    target=/bundles/Sonata/DoctrineORMAdminBundle
+
 [SonataUserBundle]
     git=git://github.com/sonata-project/SonataUserBundle.git
     target=/bundles/Sonata/UserBundle
