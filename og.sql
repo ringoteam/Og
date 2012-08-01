@@ -15,7 +15,8 @@ CREATE  TABLE IF NOT EXISTS `og`.`artist` (
   `birthdate` DATETIME NULL ,
   `deathdate` DATETIME NULL ,
   PRIMARY KEY (`id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 INSERT INTO `og`.`artist` (`id`, `lastname`, `firstname`, `birthdate`, `deathdate`) VALUES
 (1, 'prénomn', 'artiste 1', '2008-01-01 00:00:00', '2007-01-01 00:00:00'),
@@ -29,7 +30,8 @@ CREATE  TABLE IF NOT EXISTS `og`.`productionStatus` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `label` VARCHAR(50) NOT NULL ,
   PRIMARY KEY (`id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
@@ -63,7 +65,8 @@ CREATE  TABLE IF NOT EXISTS `og`.`artwork` (
     REFERENCES `og`.`productionStatus` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
@@ -82,50 +85,54 @@ CREATE  TABLE IF NOT EXISTS `og`.`purchase` (
     REFERENCES `og`.`artwork` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
 -- Table `og`.`civility`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`civility` (
-  `CivilityId` INT NOT NULL AUTO_INCREMENT ,
+  `id` INT NOT NULL AUTO_INCREMENT ,
   `CivilityName` VARCHAR(45) NOT NULL ,
-  PRIMARY KEY (`CivilityId`) )
-ENGINE = InnoDB;
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
 -- Table `og`.`country`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`country` (
-  `CountryId` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `CountryName` VARCHAR(45) NOT NULL ,
-  PRIMARY KEY (`CountryId`) )
-ENGINE = InnoDB;
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
 -- Table `og`.`state`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`state` (
-  `StateId` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `StateName` VARCHAR(45) NOT NULL ,
   `CountryId` INT NOT NULL ,
-  PRIMARY KEY (`StateId`) ,
+  PRIMARY KEY (`id`) ,
   CONSTRAINT `fk_State_Country`
     FOREIGN KEY (`CountryId` )
-    REFERENCES `og`.`country` (`CountryId` )
+    REFERENCES `og`.`country` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
 -- Table `og`.`customer`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`customer` (
-  `CustomerId` INT NOT NULL AUTO_INCREMENT ,
+  `id` INT NOT NULL AUTO_INCREMENT ,
   `LastName` VARCHAR(45) NOT NULL ,
   `FirstName` VARCHAR(45) NOT NULL ,
   `Company` VARCHAR(45) NOT NULL ,
@@ -144,20 +151,20 @@ CREATE  TABLE IF NOT EXISTS `og`.`customer` (
   `Title` INT NOT NULL ,
   `Country` INT NOT NULL ,
   `State` INT NOT NULL ,
-  PRIMARY KEY (`CustomerId`) ,
+  PRIMARY KEY (`id`) ,
   CONSTRAINT `fk_customer_Title`
     FOREIGN KEY (`Title` )
-    REFERENCES `og`.`civility` (`CivilityId` )
+    REFERENCES `og`.`civility` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_customer_Country`
     FOREIGN KEY (`Country` )
-    REFERENCES `og`.`country` (`CountryId` )
+    REFERENCES `og`.`country` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_customer_State`
     FOREIGN KEY (`State` )
-    REFERENCES `og`.`state` (`StateId` )
+    REFERENCES `og`.`state` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
