@@ -7,36 +7,27 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Validator\ErrorElement;
 use Sonata\AdminBundle\Form\FormMapper;
 
-class PurchaseAdmin extends Admin
+class ProductionstatusAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('artwork_id')
-            ->add('owner')
-            ->add('stockfrom')
-            ->add('stockstatus')
-            ->add('consignmentstartdate','date')
-            
-            
+            ->add('label')
         ;
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-          ->add('firstname')
-            ->add('lastname')
-            
+          ->add('label')
         ;
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-           ->add('firstname')
-            ->add('lastname')
-            ->add('_action', 'actions', array(
+           ->add('label')
+           ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
                     'delete' => array(),
@@ -49,7 +40,7 @@ class PurchaseAdmin extends Admin
     public function validate(ErrorElement $errorElement, $object)
     {
         $errorElement
-            ->with('firstname')
+            ->with('label')
                 ->assertMaxLength(array('limit' => 32))
             ->end()
         ;

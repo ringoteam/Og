@@ -22,13 +22,14 @@ class Purchase
     private $id;
 
     /**
-     * @var integer $artworksId
+     * @var integer $artwork_id
      *
-     * @ORM\Column(name="artworks_id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="NONE")
+     * @ORM\ManyToOne(targetEntity="Artwork")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="artwork_id", referencedColumnName="id")
+     * })
      */
-    private $artworksId;
+    private $artwork_id;
 
     /**
      * @var string $owner
@@ -59,18 +60,6 @@ class Purchase
     private $consignmentstartdate;
 
     /**
-     * @var Artworks
-     *
-     * @ORM\ManyToOne(targetEntity="Artworks")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="artworks_id", referencedColumnName="id")
-     * })
-     */
-    private $artworks;
-
-
-
-    /**
      * Set id
      *
      * @param integer $id
@@ -91,23 +80,23 @@ class Purchase
     }
 
     /**
-     * Set artworksId
+     * Set artwork_id
      *
-     * @param integer $artworksId
+     * @param Og\Bundle\AdminBundle\Entity\Artwork $artwork_id
      */
-    public function setArtworksId($artworksId)
+    public function setArtworkId(\Og\Bundle\AdminBundle\Entity\Artwork $artwork_id)
     {
-        $this->artworksId = $artworksId;
+        $this->artwork_id = $artwork_id;
     }
 
     /**
-     * Get artworksId
+     * Get artwork_id
      *
-     * @return integer 
+     * @return Og\Bundle\AdminBundle\Entity\Artwork
      */
-    public function getArtworksId()
+    public function getArtworkId()
     {
-        return $this->artworksId;
+        return $this->artwork_id;
     }
 
     /**
@@ -190,23 +179,4 @@ class Purchase
         return $this->consignmentstartdate;
     }
 
-    /**
-     * Set artworks
-     *
-     * @param Og\Bundle\AdminBundle\Entity\Artworks $artworks
-     */
-    public function setArtworks(\Og\Bundle\AdminBundle\Entity\Artworks $artworks)
-    {
-        $this->artworks = $artworks;
-    }
-
-    /**
-     * Get artworks
-     *
-     * @return Og\Bundle\AdminBundle\Entity\Artworks 
-     */
-    public function getArtworks()
-    {
-        return $this->artworks;
-    }
 }

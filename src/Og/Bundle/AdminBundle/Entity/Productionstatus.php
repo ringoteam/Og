@@ -8,26 +8,25 @@ use Doctrine\ORM\Mapping as ORM;
  * Og\Bundle\AdminBundle\Entity\Productionstatus
  *
  * @ORM\Table(name="productionStatus")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Og\Bundle\AdminBundle\Entity\ProductionstatusRepository")
  */
 class Productionstatus
 {
     /**
      * @var integer $id
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string $label
      *
-     * @ORM\Column(name="label", type="string", length=50, nullable=false)
+     * @ORM\Column(name="label", type="string", length=45)
      */
     private $label;
-
 
 
     /**

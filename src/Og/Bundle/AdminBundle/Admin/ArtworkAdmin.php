@@ -15,7 +15,7 @@ class ArtworkAdmin extends Admin
             ->with('Général')
             ->add('artworkname')
             ->add('productiondate','date')
-            ->add('artists')
+            ->add('artist')
             ->add('category')
             ->add('edition','checkbox')
             ->add('editionnumber')

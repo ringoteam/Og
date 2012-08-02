@@ -15,7 +15,10 @@ class ArtistAdmin extends Admin
             ->add('firstname')
             ->add('lastname')
             ->add('birthdate','birthday')
-            ->add('deathdate','birthday')
+            ->add('deathdate', 'birthday', array (
+			'widget' => 'choice',
+			'pattern' => '{{ day }}-{{ month }}-{{ year }',
+			)) 
             
             
         ;
