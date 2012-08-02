@@ -1,6 +1,7 @@
 <?php
 namespace Og\Bundle\AdminBundle\Admin;
 
+use Og\Bundle\AdminBundle\Entity\Artwork;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -12,6 +13,7 @@ class PurchaseAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
+            ->with('Général')
             ->add('artwork_id')
             ->add('owner')
             ->add('stockfrom')
@@ -24,6 +26,12 @@ class PurchaseAdmin extends Admin
             ->add('purchasepricevat')
             ->add('purchasepricecurrency')
             ->add('supplier')
+            ->end()
+            ->with('Artwork',array('collapsed' => true))
+            ->add('artwork', 'collection', array(
+                                            'type' => new Artwork(),
+                                            'label' => 'artwork'))
+            ->end();
         ;
     }
 

@@ -366,4 +366,14 @@ class Purchase
     {
         return $this->supplier;
     }
+    
+    /**
+     * Get Artwork
+     *
+     * @return Og\Bundle\AdminBundle\Entity\Artwork
+     */
+    public function getArtwork() 
+    {
+        return $this->artwork_id;
+    }
 }
