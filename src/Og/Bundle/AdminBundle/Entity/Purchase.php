@@ -12,23 +12,25 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Purchase
 {
+    
     /**
      * @var integer $id
      *
      * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="NONE")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @var integer $artworksId
+     * @var integer $artwork_id
      *
-     * @ORM\Column(name="artworks_id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="NONE")
+     * @ORM\ManyToOne(targetEntity="Artwork")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="artwork_id", referencedColumnName="id")
+     * })
      */
-    private $artworksId;
+    private $artwork_id;
 
     /**
      * @var string $owner
@@ -57,29 +59,64 @@ class Purchase
      * @ORM\Column(name="ConsignmentStartDate", type="datetime", nullable=true)
      */
     private $consignmentstartdate;
+    
+     /**
+     * @var datetime $consignmentenddate
+     *
+     * @ORM\Column(name="ConsignmentEndDate", type="datetime", nullable=true)
+     */
+    private $consignmentenddate;
+
+    
+     /**
+     * @var datetime $purchasedate
+     *
+     * @ORM\Column(name="PurchaseDate", type="datetime", nullable=true)
+     */
+    private $purchasedate;
+
+    
+     /**
+     * @var string $purchasenumber
+     *
+     * @ORM\Column(name="PurchaseNumber", type="string", nullable=true)
+     */
+    private $purchasenumber;
+    
+     /**
+     * @var integer $purchasepriceht
+     *
+     * @ORM\Column(name="PurchasePriceHt", type="integer", nullable=true)
+     */
+    private $purchasepriceht;
+    
+    /**
+     * @var integer $purchasepricevat
+     *
+     * @ORM\Column(name="PurchasePriceVat", type="integer", nullable=true)
+     */
+    private $purchasepricevat;
 
     /**
-     * @var Artworks
-     *
-     * @ORM\ManyToOne(targetEntity="Artworks")
+     * @var string $purchasepricecurrency
+     * 
+     * @ORM\ManyToOne(targetEntity="Currency")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="artworks_id", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="PurchasePriceCurrency", referencedColumnName="id")
      * })
      */
-    private $artworks;
-
-
-
+    private $purchasepricecurrency;
+    
     /**
-     * Set id
+     * @var integer $supplier
      *
-     * @param integer $id
+     * @ORM\ManyToOne(targetEntity="Supplier")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Supplier", referencedColumnName="id")
+     * })
      */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
+    private $supplier;
+    
     /**
      * Get id
      *
@@ -91,23 +128,23 @@ class Purchase
     }
 
     /**
-     * Set artworksId
+     * Set artwork_id
      *
-     * @param integer $artworksId
+     * @param Og\Bundle\AdminBundle\Entity\Artwork $artwork_id
      */
-    public function setArtworksId($artworksId)
+    public function setArtworkId(\Og\Bundle\AdminBundle\Entity\Artwork $artwork_id)
     {
-        $this->artworksId = $artworksId;
+        $this->artwork_id = $artwork_id;
     }
 
     /**
-     * Get artworksId
+     * Get artwork_id
      *
-     * @return integer 
+     * @return Og\Bundle\AdminBundle\Entity\Artwork
      */
-    public function getArtworksId()
+    public function getArtworkId()
     {
-        return $this->artworksId;
+        return $this->artwork_id;
     }
 
     /**
@@ -189,24 +226,154 @@ class Purchase
     {
         return $this->consignmentstartdate;
     }
-
+    
     /**
-     * Set artworks
+     * Set ConsignmentEndDate
      *
-     * @param Og\Bundle\AdminBundle\Entity\Artworks $artworks
+     * @param datetime $consignmentenddate
      */
-    public function setArtworks(\Og\Bundle\AdminBundle\Entity\Artworks $artworks)
+    public function setConsignmentenddate($consignmentenddate)
     {
-        $this->artworks = $artworks;
+        $this->consignmentenddate = $consignmentenddate;
     }
 
     /**
-     * Get artworks
+     * Get ConsignmentEndDate
      *
-     * @return Og\Bundle\AdminBundle\Entity\Artworks 
+     * @return datetime 
      */
-    public function getArtworks()
+    public function getConsignmentenddate()
     {
-        return $this->artworks;
+        return $this->consignmentenddate;
+    }
+    
+    /**
+     * Set PurchaseDate
+     *
+     * @param datetime $purchasedate
+     */
+    public function setPurchasedate($purchasedate)
+    {
+        $this->purchasedate = $purchasedate;
+    }
+
+    /**
+     * Get PurchaseDate
+     *
+     * @return datetime 
+     */
+    public function getPurchasedate()
+    {
+        return $this->purchasedate;
+    }
+    
+    /**
+     * Set PurchaseNumber
+     *
+     * @param string $purchasenumber
+     */
+    public function setPurchasenumber($purchasenumber)
+    {
+        $this->purchasenumber = $purchasenumber;
+    }
+
+    /**
+     * Get PurchaseNumber
+     *
+     * @return string
+     */
+    public function getPurchasenumber()
+    {
+        return $this->purchasenumber;
+    }
+    
+    /**
+     * Set PurchasePriceHt
+     *
+     * @param integer $purchasepriceht
+     */
+    public function setPurchasepriceht($purchasepriceht)
+    {
+        $this->purchasepriceht = $purchasepriceht;
+    }
+
+    /**
+     * Get PurchasePriceHt
+     *
+     * @return integer
+     */
+    public function getPurchasepriceht()
+    {
+        return $this->purchasepriceht;
+    }
+    
+    /**
+     * Set PurchasePriceVat
+     *
+     * @param integer $purchasepricevat
+     */
+    public function setPurchasepricevat($purchasepricevat)
+    {
+        $this->purchasepricevat = $purchasepricevat;
+    }
+
+    /**
+     * Get PurchasePriceVat
+     *
+     * @return integer
+     */
+    public function getPurchasepricevat()
+    {
+        return $this->purchasepricevat;
+    }
+    
+    /**
+     * Set PurchasePriceCurrency
+     *
+     * @param Og\Bundle\AdminBundle\Entity\Currency $purchasepricecurrency
+     */
+    public function setPurchasepricecurrency(\Og\Bundle\AdminBundle\Entity\Currency $purchasepricecurrency)
+    {
+        $this->purchasepricecurrency = $purchasepricecurrency;
+    }
+
+    /**
+     * Get PurchasePriceCurrency
+     *
+     * @return Og\Bundle\AdminBundle\Entity\Currency
+     */
+    public function getPurchasepricecurrency()
+    {
+        return $this->purchasepricecurrency;
+    }
+    
+    /**
+     * Set Supplier
+     *
+     * @param Og\Bundle\AdminBundle\Entity\Supplier $supplier
+     */
+    public function setSupplier(\Og\Bundle\AdminBundle\Entity\Supplier $supplier)
+    {
+        $this->supplier = $supplier;
+    }
+
+    /**
+     * Get Supplier
+     *
+     * @return Og\Bundle\AdminBundle\Entity\Supplier
+     */
+    public function getSupplier()
+    {
+        return $this->supplier;
+    }
+    
+    /**
+     * Get Artwork
+     *
+     * @return Og\Bundle\AdminBundle\Entity\Artwork
+     */
+    public function getArtwork() 
+    {
+        return $this->artwork_id;
     }
 }

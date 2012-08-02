@@ -117,10 +117,10 @@ class Artwork
      *
      * @ORM\ManyToOne(targetEntity="Artist")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="artists_id", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="artist_id", referencedColumnName="id")
      * })
      */
-    private $artists;
+    private $artist;
 
     /**
      * @var Productionstatus
@@ -415,23 +415,23 @@ class Artwork
     }
 
     /**
-     * Set artists
+     * Set artist
      *
-     * @param Og\Bundle\AdminBundle\Entity\Artists $artists
+     * @param Og\Bundle\AdminBundle\Entity\Artist $artist
      */
-    public function setArtists(\Og\Bundle\AdminBundle\Entity\Artists $artists)
+    public function setArtist(\Og\Bundle\AdminBundle\Entity\Artist $artist)
     {
-        $this->artists = $artists;
+        $this->artist = $artist;
     }
 
     /**
-     * Get artists
+     * Get artist
      *
-     * @return Og\Bundle\AdminBundle\Entity\Artists 
+     * @return Og\Bundle\AdminBundle\Entity\Artist
      */
-    public function getArtists()
+    public function getArtist()
     {
-        return $this->artists;
+        return $this->artist;
     }
 
     /**

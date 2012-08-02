@@ -58,6 +58,33 @@
               <argument>Mon admin oeuvre</argument>
           </call>
       </service>
+      <service id="sonata.admin.productionstatus" class="Og\Bundle\AdminBundle\Admin\ProductionstatusAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Productionstatus"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Productionstatus</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+      <service id="sonata.admin.currency" class="Og\Bundle\AdminBundle\Admin\CurrencyAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Currency"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Currency</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
+      <service id="sonata.admin.supplier" class="Og\Bundle\AdminBundle\Admin\SupplierAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Supplier"/>
+          <argument />
+          <argument>Og\Bundle\AdminBundle\Entity\Supplier</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>Mon admin oeuvre</argument>
+          </call>
+      </service>
       <service id="sonata.admin.customer" class="Og\Bundle\AdminBundle\Admin\CustomerAdmin">
           <tag name="sonata.admin" manager_type="orm" group="Customers" label="Customers"/>
           <argument />
