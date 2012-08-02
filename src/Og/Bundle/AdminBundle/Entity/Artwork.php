@@ -133,7 +133,17 @@ class Artwork
     private $productionstatus;
 
 
-
+    /**
+     * @var Productionstatus
+     *
+     * @ORM\OneToMany(targetEntity="Purchase",mappedBy="product")
+     **/
+    private $Purchase;
+    
+     public function __construct() {
+            $this->features = new \Doctrine\Common\Collections\ArrayCollection();
+     }
+     
     /**
      * Get id
      *
@@ -447,4 +457,14 @@ class Artwork
     public function __toString() {
         return $this->getArtworkname();
     }
+    
+    /** GET Purchase 
+     * @return Og\Bundle\AdminBundle\entity\Purchase 
+     * 
+     */
+    
+    public function getPurchase() {
+        return $this->Purchase;
+    }
+    
 }
