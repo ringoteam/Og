@@ -2,8 +2,8 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `og` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
+USE `og` ;
 
 -- -----------------------------------------------------
 -- Table `og`.`artist`
@@ -15,13 +15,8 @@ CREATE  TABLE IF NOT EXISTS `og`.`artist` (
   `birthdate` DATETIME NULL ,
   `deathdate` DATETIME NULL ,
   PRIMARY KEY (`id`) )
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+ENGINE = InnoDB;
 
-INSERT INTO `og`.`artist` (`id`, `lastname`, `firstname`, `birthdate`, `deathdate`) VALUES
-(1, 'prénomn', 'artiste 1', '2008-01-01 00:00:00', '2007-01-01 00:00:00'),
-(2, 'ou pas', 'c''est mon prénom', '2007-01-01 00:00:00', '2010-01-01 00:00:00'),
-(3, 'dali', 'salvador', '2007-01-01 00:00:00', '2009-01-01 00:00:00');
 
 -- -----------------------------------------------------
 -- Table `og`.`productionStatus`
@@ -30,8 +25,7 @@ CREATE  TABLE IF NOT EXISTS `og`.`productionStatus` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `label` VARCHAR(50) NOT NULL ,
   PRIMARY KEY (`id`) )
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -65,8 +59,43 @@ CREATE  TABLE IF NOT EXISTS `og`.`artwork` (
     REFERENCES `og`.`productionStatus` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `og`.`supplier`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `og`.`supplier` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `SupplierName` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `og`.`country`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `og`.`country` (
+  `id` INT NOT NULL ,
+  `CountryName` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `og`.`currency`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `og`.`currency` (
+  `id` INT  NOT NULL AUTO_INCREMENT ,
+  `CurrencyName` VARCHAR(45) NULL ,
+  `Country` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  CONSTRAINT `fk_currency_country1`
+    FOREIGN KEY (`Country` )
+    REFERENCES `og`.`country` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -79,43 +108,47 @@ CREATE  TABLE IF NOT EXISTS `og`.`purchase` (
   `StockStatus` INT NULL ,
   `ConsignmentStartDate` DATETIME NULL ,
   `artwork_id` INT NOT NULL ,
+  `ConsignmentEndDate` DATETIME NULL ,
+  `PurchaseDate` DATETIME NULL ,
+  `PurchaseNumber` VARCHAR(45) NULL ,
+  `PurchasePriceHt` INT NULL ,
+  `PurchasePriceVat` INT NULL ,
+  `Supplier` INT NOT NULL ,
+  `PurchasePriceCurrency` INT NOT NULL ,
   PRIMARY KEY (`id`, `artwork_id`) ,
   CONSTRAINT `fk_purchase_artwork1`
     FOREIGN KEY (`artwork_id` )
     REFERENCES `og`.`artwork` (`id` )
     ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_purchase_supplier1`
+    FOREIGN KEY (`Supplier` )
+    REFERENCES `og`.`supplier` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_purchase_currency1`
+    FOREIGN KEY (`PurchasePriceCurrency` )
+    REFERENCES `og`.`currency` (`id` )
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
 -- Table `og`.`civility`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`civility` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
+  `id` INT NOT NULL ,
   `CivilityName` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`id`) )
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
-
-
--- -----------------------------------------------------
--- Table `og`.`country`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `og`.`country` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `CountryName` VARCHAR(45) NOT NULL ,
-  PRIMARY KEY (`id`) )
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
 -- Table `og`.`state`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `og`.`state` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL ,
   `StateName` VARCHAR(45) NOT NULL ,
   `CountryId` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
@@ -124,8 +157,7 @@ CREATE  TABLE IF NOT EXISTS `og`.`state` (
     REFERENCES `og`.`country` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -184,6 +216,7 @@ DEFAULT CHARACTER SET = latin1;
 
 CREATE UNIQUE INDEX `UNIQ_583D1F3E5E237E06` ON `og`.`fos_user_group` (`name` ASC) ;
 
+
 -- -----------------------------------------------------
 -- Table `og`.`fos_user_user`
 -- -----------------------------------------------------
@@ -237,9 +270,6 @@ CREATE UNIQUE INDEX `UNIQ_C560D76192FC23A8` ON `og`.`fos_user_user` (`username_c
 CREATE UNIQUE INDEX `UNIQ_C560D761A0D96FBF` ON `og`.`fos_user_user` (`email_canonical` ASC) ;
 
 
-INSERT INTO `og`.`fos_user_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `locked`, `expired`, `expires_at`, `confirmation_token`, `password_requested_at`, `roles`, `credentials_expired`, `credentials_expire_at`, `created_at`, `updated_at`, `date_of_birth`, `firstname`, `lastname`, `website`, `biography`, `gender`, `locale`, `timezone`, `phone`, `facebook_uid`, `facebook_name`, `facebook_data`, `twitter_uid`, `twitter_name`, `twitter_data`, `gplus_uid`, `gplus_name`, `gplus_data`, `token`, `two_step_code`) VALUES
-(1, 'admin', 'admin', 'admin@example.com', 'admin@example.com', 1, 'mpe1kgfsvfkggcwok0ww0wwc4wkckc0', 'd53tVSrrud+ABqSTBZ6vI731E6iHPVA4G30dNTIllcC3BUSjuBLwO1vOLCBDQOlduvx+pxyR7P2q+A8oC5hX1Q==', '2012-07-30 00:53:31', 0, 0, NULL, '34y5ldm08saocwc0c84g0sw80wkgw4kkws4s04g40gc08ksocc', NULL, 'a:1:{i:0;s:16:"ROLE_SUPER_ADMIN";}', 0, NULL, '2012-07-29 07:44:30', '2012-07-30 00:53:31', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'null', NULL, NULL, 'null', NULL, NULL, 'null', NULL, NULL);
-
 -- -----------------------------------------------------
 -- Table `og`.`fos_user_user_group`
 -- -----------------------------------------------------
@@ -263,3 +293,4 @@ CREATE INDEX `IDX_B3C77447A76ED395` ON `og`.`fos_user_user_group` (`user_id` ASC
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
