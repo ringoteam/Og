@@ -14,7 +14,7 @@ class PurchaseAdmin extends Admin
     {
         $formMapper
             ->with('Général')
-            ->add('artwork_id')
+            //->add('artwork_id')
             ->add('owner')
             ->add('stockfrom')
             ->add('stockstatus')
@@ -22,15 +22,14 @@ class PurchaseAdmin extends Admin
             ->add('consignmentenddate','date')
             ->add('purchasedate','date')
             ->add('purchasenumber')
-            ->add('purchasepriceht')
-            ->add('purchasepricevat')
+            ->add('purchasepriceht', 'text', array('label' => 'Prix hors taxe'))
+            ->add('purchasepricevat', 'text', array('label' => 'Prix TTC'))
             ->add('purchasepricecurrency')
             ->add('supplier')
             ->end()
             ->with('Artwork',array('collapsed' => true))
             ->add('artwork', 'collection', array(
-                                            'type' => new Artwork(),
-                                            'label' => 'artwork'))
+                                            'type' => new Artwork()))
             ->end();
         ;
     }
