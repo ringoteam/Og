@@ -12,7 +12,8 @@ class ArtistAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('firstname')
+            ->add('firstname', null, array(
+                    'max_length' => 45))
             ->add('lastname')
             ->add('birthdate','birthday')
             ->add('deathdate', 'birthday', array (
