@@ -141,7 +141,7 @@ class Artwork
     private $Purchase;
     
      public function __construct() {
-            $this->features = new \Doctrine\Common\Collections\ArrayCollection();
+            $this->Purchase = new \Doctrine\Common\Collections\ArrayCollection();
      }
      
     /**

@@ -26,11 +26,13 @@ class SupplierAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
+           ->add('id')
            ->add('SupplierName')
            ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
                     'delete' => array(),
+   
                 )
             ))
             

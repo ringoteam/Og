@@ -28,6 +28,7 @@ class CurrencyAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
+           ->add('id')
            ->add('CurrencyName')
            ->add('Country')
            ->add('_action', 'actions', array(
