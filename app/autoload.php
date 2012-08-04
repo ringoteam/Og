@@ -8,8 +8,6 @@ $loader->registerNamespaces(array(
     'Doctrine\\ODM' => __DIR__.'/../vendor/doctrine-mongodb-odm/lib',
     'Doctrine\\Bundle' => __DIR__.'/../vendor/bundles',
     'Doctrine\\Common\\DataFixtures' => __DIR__.'/../vendor/doctrine-fixtures/lib',
-    'WhiteOctober\\PagerfantaBundle' => __DIR__.'/../vendor/bundles',
-    'Pagerfanta' => __DIR__.'/../vendor/pagerfanta/src',
     'TwigGenerator' => __DIR__.'/../vendor/twig-generator/src',
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
     'Sensio'           => __DIR__.'/../vendor/bundles',
@@ -23,9 +21,6 @@ $loader->registerNamespaces(array(
     'Sensio\Bundle'     => __DIR__.'/../vendor/bundles',
     'Knp'       => __DIR__.'/../vendor/bundles',
     'Knp\Menu'  => __DIR__.'/../vendor/KnpMenu/src',
-    'TwigGenerator'         => __DIR__.'/../vendor/twig-generator/src',
-    'WhiteOctober\PagerfantaBundle' => __DIR__.'/../vendor/bundles',
-    'Pagerfanta'                    => __DIR__.'/../vendor/pagerfanta/src',
     'Sonata'     => array(
         __DIR__.'/../vendor/bundles',
         __DIR__.'/../vendor/SonataDoctrineExtension/src'
@@ -33,6 +28,9 @@ $loader->registerNamespaces(array(
     'Exporter'   => __DIR__.'/../vendor/exporter/lib',
     'FOS' => __DIR__.'/../vendor/bundles',
     'Application'      => __DIR__,
+    'Imagine'       => __DIR__.'/../vendor/imagine/lib',
+    'Gaufrette'     => __DIR__.'/../vendor/gaufrette/src',
+    'Buzz'          => __DIR__.'/../vendor/buzz/lib',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',

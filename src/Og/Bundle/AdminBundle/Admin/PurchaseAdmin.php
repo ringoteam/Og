@@ -24,7 +24,7 @@ class PurchaseAdmin extends Admin
             ->add('purchasenumber')
             ->add('purchasepriceht', 'text', array('label' => 'Prix hors taxe'))
             ->add('purchasepricevat', 'text', array('label' => 'Prix TTC'))
-            ->add('purchasepricecurrency','sonata_type_model', array(), array('edit' => 'list'))
+            ->add('purchasepricecurrency','sonata_type_model', array(), array('edit' => 'standard'))
             ->add('supplier','sonata_type_model', array(), array('edit' => 'standard'))
             ->end()
             ->with('Artwork',array('collapsed' => true))

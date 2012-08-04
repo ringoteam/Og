@@ -132,4 +132,19 @@
 [Exporter]
     git=http://github.com/sonata-project/exporter.git
     target=/exporter
+[SonataMediaBundle]
+    git=git://github.com/sonata-project/SonataMediaBundle.git
+    target=/bundles/Sonata/MediaBundle
+    version=origin/2.0
+[Imagine]:
+    git=git://github.com/avalanche123/Imagine.git
+    target=/imagine
+
+[Gaufrette]
+    git=git://github.com/KnpLabs/Gaufrette.git
+    target=/gaufrette
+
+[buzz]
+    git=git://github.com/kriswallsmith/Buzz.git
+    target=/buzz
 
