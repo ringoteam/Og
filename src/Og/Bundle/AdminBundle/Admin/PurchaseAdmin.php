@@ -24,12 +24,11 @@ class PurchaseAdmin extends Admin
             ->add('purchasenumber')
             ->add('purchasepriceht', 'text', array('label' => 'Prix hors taxe'))
             ->add('purchasepricevat', 'text', array('label' => 'Prix TTC'))
-            ->add('purchasepricecurrency')
-            ->add('supplier')
+            ->add('purchasepricecurrency','sonata_type_model', array(), array('edit' => 'list'))
+            ->add('supplier','sonata_type_model', array(), array('edit' => 'standard'))
             ->end()
             ->with('Artwork',array('collapsed' => true))
-            ->add('artwork', 'collection', array(
-                                            'type' => new Artwork()))
+            //->add('artwork', 'sonata_type_model', array(), array('edit' => 'list'))
             ->end();
         ;
     }
