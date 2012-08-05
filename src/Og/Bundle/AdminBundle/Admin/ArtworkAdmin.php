@@ -29,7 +29,7 @@ class ArtworkAdmin extends Admin
             ->add('remark')
             ->end()
             ->with('Purchase',array('collapsed' => true))
-            ->add('Purchase','sonata_type_model', array(), array('edit' => 'list'))
+            ->add('Purchase','sonata_type_model', array(), array('edit' => 'standard'))
             ->end();
         ;
     }

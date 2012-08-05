@@ -307,6 +307,9 @@ class Purchase
         return $this->purchasepriceht;
     }
     
+    
+    
+    
     /**
      * Set PurchasePriceVat
      *
@@ -375,5 +378,9 @@ class Purchase
     public function getArtwork() 
     {
         return $this->artwork_id;
+    }
+    
+    public function __toString() {
+        return $this->id.' '.$this->purchasenumber;
     }
 }

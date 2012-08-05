@@ -71,22 +71,56 @@ sonata_block:
         sonata.block.service.text:
         sonata.block.service.action:
         sonata.block.service.rss:
-          
+        # Some specific blocks from the SonataMediaBundle
+        sonata.media.block.media:
+        sonata.media.block.gallery:
 sonata_user:
     security_acl: true
 fos_user:
     db_driver: orm
     firewall_name: main
     user_class: Application\Sonata\UserBundle\Entity\User
-    
+
+sonata_admin:
+    title:  Opera Galery
+    templates:            
+      dashboard: OgAdminBundle:Core:dashboard.html.twig
+    dashboard:
+        blocks:
+            # display two dashboard blocks
+            - { position: left,  type: sonata.admin.block.admin_list, settings: { groups: [referentiel,users,media] } }
+            - { position: right, type: sonata.admin.block.admin_list, settings: { groups: [administration] } }
+        groups:
+            referentiel:
+               items:
+                  - sonata.admin.artist
+                  - sonata.admin.artwork
+                  - sonata.admin.purchase
+                  - sonata.admin.supplier
+                  - sonata.admin.customer
+            administration:      
+               items:
+                 - sonata.admin.civility
+                 - sonata.admin.country
+                 - sonata.admin.currency
+                 - sonata.admin.productionstatus
+                 - sonata.admin.state
+                 - sonata.user.admin.user
+            users:
+                items:
+                   - sonata.user.admin.user
+                   - sonata.user.admin.group
+            media:
+                items:
+                   - sonata.media.admin.media
+                
+
 sonata_media:
     default_context: default
     db_driver: doctrine_orm # or doctrine_mongodb
     contexts:
         default:  # the default context is mandatory
             providers:
-                - sonata.media.provider.dailymotion
-                - sonata.media.provider.youtube
                 - sonata.media.provider.image
                 - sonata.media.provider.file
 
