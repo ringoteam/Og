@@ -31,6 +31,11 @@ $loader->registerNamespaces(array(
     'Imagine'       => __DIR__.'/../vendor/imagine/lib',
     'Gaufrette'     => __DIR__.'/../vendor/gaufrette/src',
     'Buzz'          => __DIR__.'/../vendor/buzz/lib',
+    'Ps' => __DIR__.'/../vendor/bundles',
+    'PHPPdf' => __DIR__.'/../vendor/PHPPdf/lib',
+    'Imagine' => array(__DIR__.'/../vendor/PHPPdf/lib', __DIR__.'/../vendor/PHPPdf/lib/vendor/Imagine/lib'),
+    'Zend' => __DIR__.'/../vendor/PHPPdf/lib/vendor/Zend/library',//If you have used ZF2 packages already, you should skip this entry
+    'ZendPdf' => __DIR__.'/../vendor/PHPPdf/lib/vendor/ZendPdf/library',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',

@@ -152,3 +152,10 @@
     git=git://github.com/kriswallsmith/Buzz.git
     target=/buzz
 
+[PdfBundle]
+    git=git://github.com/psliwa/PdfBundle.git
+    target=/bundles/Ps/PdfBundle
+
+[PHPPdf]
+    git=git://github.com/psliwa/PHPPdf.git
+    version=origin/1.1.x
