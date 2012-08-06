@@ -183,6 +183,7 @@ CREATE  TABLE IF NOT EXISTS `og`.`customer` (
   `Title` INT NOT NULL ,
   `Country` INT NOT NULL ,
   `State` INT NOT NULL ,
+  `CustomerHasMedia` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
   CONSTRAINT `fk_customer_Title`
     FOREIGN KEY (`Title` )
@@ -198,9 +199,34 @@ CREATE  TABLE IF NOT EXISTS `og`.`customer` (
     FOREIGN KEY (`State` )
     REFERENCES `og`.`state` (`id` )
     ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_customer_customer_has_media`
+    FOREIGN KEY (`State` )
+    REFERENCES `og`.`customer_has_media` (`id` )
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+
+-- -----------------------------------------------------
+-- Table `og`.`customer_has_media`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `og`.`customer_has_media` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT ,
+  `media` INT NOT NULL ,
+  `customer` INT NOT NULL ,
+  PRIMARY KEY (`id`),
+CONSTRAINT `fk_customer_has_media_media`
+    FOREIGN KEY (`media` )
+    REFERENCES `og`.`media__media` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+CONSTRAINT `fk_customer_has_media_customer`
+    FOREIGN KEY (`customer` )
+    REFERENCES `og`.`customer` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 -- -----------------------------------------------------
 -- Table `og`.`fos_user_group`

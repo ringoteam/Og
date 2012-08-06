@@ -158,6 +158,18 @@ class Customer
      *
      */
     private $State;
+    
+    /**
+     * 
+     * @var CustomerHasMedia
+     *
+     * @ORM\ManyToOne(targetEntity="CustomerHasMedia")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="CustomerHasMedia", referencedColumnName="id")
+     * })
+     *
+     */
+    private $CustomerHasMedia;
 
         
     /**
@@ -528,6 +540,27 @@ class Customer
     public function getState()
     {
         return $this->State;
+    }
+    
+    
+    /**
+     * Set CustomerHasMedia
+     *
+     * @param integer $customerhasmedia
+     */
+    public function setCustomerHasMedia(\Og\Bundle\AdminBundle\Entity\CustomerHasMedia $customerhasmedia)
+    {
+        $this->CustomerHasMedia = $customerhasmedia;
+    }
+
+    /**
+     * Get CustomerHasMedia
+     *
+     * @return Og\Bundle\AdminBundle\Entity\CustomerHasMedia 
+     */
+    public function getCustomerHasMedia()
+    {
+        return $this->CustomerHasMedia;
     }
     
     public function __toString() {

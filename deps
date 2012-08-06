@@ -108,6 +108,10 @@
     git=git://github.com/sonata-project/SonataDoctrineORMAdminBundle.git
     target=/bundles/Sonata/DoctrineORMAdminBundle
 
+[SonataMediaBundle]
+    git=git://github.com/sonata-project/SonataMediaBundle.git
+    target=/bundles/Sonata/MediaBundle
+
 [SonataUserBundle]
     git=git://github.com/sonata-project/SonataUserBundle.git
     target=/bundles/Sonata/UserBundle

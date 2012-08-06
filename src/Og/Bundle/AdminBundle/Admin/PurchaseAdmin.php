@@ -1,7 +1,7 @@
 <?php
 namespace Og\Bundle\AdminBundle\Admin;
 
-use Og\Bundle\AdminBundle\Entity\Artwork;
+//use Og\Bundle\AdminBundle\Entity\Artwork;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -28,7 +28,7 @@ class PurchaseAdmin extends Admin
             ->add('supplier','sonata_type_model', array(), array('edit' => 'standard'))
             ->end()
             ->with('Artwork',array('collapsed' => true))
-            //->add('artwork', 'sonata_type_model', array(), array('edit' => 'list'))
+                //->add('artwork', 'sonata_type_model', array('expanded' => true))
             ->end();
         ;
     }

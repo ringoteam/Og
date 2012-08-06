@@ -7,14 +7,17 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Validator\ErrorElement;
 use Sonata\AdminBundle\Form\FormMapper;
 
+use Og\Bundle\AdminBundle\Admin\CivilityAdmin;
+
 class CustomerAdmin extends Admin
 {
      protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
+            ->with('Général')
             ->add('Title', null, array("required" => true,
                         'attr' => array(
-                        'class' => 'list-field')))
+                        'class' => 'list-field'))) 
             ->add('FirstName', null, array(
                     'required' => true,
                     'max_length' => 45,
@@ -77,10 +80,23 @@ class CustomerAdmin extends Admin
                     'required' => false,
                     'max_length' => 45,
                     'attr' => array('class' => 'classic-field')))
-            ->add('Remark', null, array(
+             ->add('Remark', null, array(
                     'required' => false,
                     'max_length' => 45,
-                    'attr' => array('class' => 'classic-field')))
+                    'attr' => array('class' => 'classic-field')))    
+            /**->add('Remark','textarea', array('attr' => array('class' => 'tinymce')))*/
+                
+            
+            ->end()
+            ->with('Medias')
+                 /**->add('customer_has_media', 'sonata_type_collection', array(
+                            'by_reference' => false
+                    ), array(
+                        'edit' => 'inline',
+                        'inline' => 'table',
+                        'sortable'  => 'position'
+                    ))*/
+            ->end()    
         ;
     }
 
