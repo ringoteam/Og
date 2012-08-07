@@ -51,6 +51,10 @@ media:
     resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
     prefix: /media
     
+pdfexamples:
+    resource: '@PsPdfBundle/Resources/config/routing.yml'
+    prefix: /pdfexamples
+
 default:
     pattern: /
     defaults:
