@@ -35,7 +35,7 @@ class ArtistAdmin extends Admin
     {
         $datagridMapper
           ->add('firstname')
-            ->add('lastname')
+          ->add('lastname')
             
         ;
     }
@@ -44,7 +44,9 @@ class ArtistAdmin extends Admin
     {
         $listMapper
            ->add('firstname')
-            ->add('lastname')
+           ->add('lastname')
+           ->add('birthdate')
+           ->add('deathdate')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
