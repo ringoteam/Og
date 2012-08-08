@@ -8,11 +8,12 @@
           <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Artists"/>
           <argument />
           <argument>Og\Bundle\AdminBundle\Entity\Artist</argument>
-          <argument>SonataAdminBundle:CRUD</argument>
+          <argument>OgAdminBundle:Artist</argument>
           <call method="setTranslationDomain">
               <argument>Mon admin oeuvre</argument>
           </call>
-      </service>
+        </service>
+        
       <service id="sonata.admin.artwork" class="Og\Bundle\AdminBundle\Admin\ArtworkAdmin">
           <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Artworks"/>
           <argument />
