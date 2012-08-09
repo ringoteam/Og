@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE pdf SYSTEM "%resources%/dtd/doctype.dtd">
+        <pdf>
+            <dynamic-page>
+                <placeholders>
+                    <header>
+                        <div height="65px">
+                            <div float="right" color="white" width="270px" padding="8px 0" text-align="center" font-size="16px" font-style="bold" margin-bottom="27px" background.color="black" background.radius="15">
+                                Artist : Youcef Nacer
+                            </div>
+                        </div>
+                    </header>
+                    <footer>
+                        <div class="footer">
+                            <table>
+                                <tr>
+                                    <td><b></b></td>
+                                    <td><b></b></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </footer>
+                </placeholders>
+                <div>
+                    <div class="invoice-data">
+                        <p>Birth Date: 01-05-1988</p>
+                        <p>Death Date: 21-12-2012</p>
+                    </div>
+                </div>
+               
+                <table class="invoice">
+                    <tr class="head">
+                        <td width="20">Id</td>
+                        <td width="100">Nom</td>
+                        <td width="120">Prénom</td>
+                        <td>Birth Date</td>
+                        <td>Death Date</td>
+                    </tr>
+                    <tr>
+                        <td class="center">5</td>
+                        <td class="center">Youcef</td>
+                        <td class="center">Nacer</td>
+                        <td class="center">01-05-1988</td>
+                        <td class="center">21-12-2012</td>
+                    </tr>
+                </table>
+
+                <div width="85%" margin="27px auto">
+                    Fiche artiste auto-générée à la demande de l'admin.
+                </div>
+            </dynamic-page>
+        </pdf>

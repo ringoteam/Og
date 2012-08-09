@@ -49,8 +49,14 @@ class Artist
      */
     private $deathdate;
 
+    /**
+     * @var blob $image
+     *
+     * @ORM\Column(name="image", type="blob", nullable=true)
+     */
+  //  private $image;
 
-
+    
     /**
      * Get id
      *
@@ -141,6 +147,26 @@ class Artist
         return $this->deathdate;
     }
     
+    /**
+     * Set image
+     *
+     * @param file 
+     */
+    /**public function setImage($image)
+    {
+        $this->image = $image;
+    }*/
+
+    /**
+     * Get image
+     *
+     * @return file
+     */
+    /*public function getImage()
+    {
+        return $this->image;
+    }
+    */
     
     public function __toString() {
         return $this->getFirstname().' '.$this->getLastname();

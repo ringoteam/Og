@@ -26,7 +26,11 @@ class ArtistAdmin extends Admin
 			'widget' => 'choice',
 			'pattern' => '{{ day }}-{{ month }}-{{ year }',
 			)) 
-            
+            //->add('image', 'file', array('required' => false))
+/**            ->add('image', 'sonata_type_model_list', array('required' => false),
+                array('link_parameters'=>array('context'=>'default',
+               'provider'=>'sonata.media.provider.image')))    
+*/            
             
         ;
     }
@@ -36,7 +40,7 @@ class ArtistAdmin extends Admin
         $datagridMapper
           ->add('firstname')
           ->add('lastname')
-            
+           ->add('birthdate')  
         ;
     }
 
@@ -47,6 +51,7 @@ class ArtistAdmin extends Admin
            ->add('lastname')
            ->add('birthdate')
            ->add('deathdate')
+            ->add('image', 'string', array('template' => 'SonataMediaBundle:MediaAdmin:list_image.html.twig'))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
