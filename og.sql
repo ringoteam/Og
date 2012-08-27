@@ -14,7 +14,11 @@ CREATE  TABLE IF NOT EXISTS `og`.`artist` (
   `firstname` VARCHAR(45) NOT NULL ,
   `birthdate` DATETIME NULL ,
   `deathdate` DATETIME NULL ,
-  PRIMARY KEY (`id`) )
+  `media` INT NOT NULL ,   
+  PRIMARY KEY (`id`) ) ,
+ CONSTRAINT `fk_artist_media`
+    FOREIGN KEY (`media` )
+    REFERENCES `og`.`media__media` (`id` )
 ENGINE = InnoDB;
 
 

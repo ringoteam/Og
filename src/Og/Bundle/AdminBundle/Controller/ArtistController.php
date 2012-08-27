@@ -115,4 +115,6 @@ class ArtistController extends CRUDController
         header('Content-Type: application/pdf');
         echo $content;
     }
+    
+   
 }
