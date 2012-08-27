@@ -28,7 +28,7 @@ class CustomerAdmin extends Admin
                     'max_length' => 45,
                     'attr' => array('class' => 'classic-field')))
             ->add('Company', null, array(
-                    'required' => false,
+                    'required' => true,
                     'max_length' => 45,
                     'attr' => array('class' => 'classic-field')))
             ->add('AdressField1', null, array(
@@ -105,7 +105,7 @@ class CustomerAdmin extends Admin
         $datagridMapper
           ->add('FirstName')
           ->add('LastName')
-            
+          ->add('Title',null, array(), null, array('expanded' => true, 'multiple' => true))         
         ;
     }
 
@@ -127,7 +127,7 @@ class CustomerAdmin extends Admin
     public function validate(ErrorElement $errorElement, $object)
     {
         $errorElement
-            ->with('FirstName')
+            >with('Email1')
                 ->assertMaxLength(array('limit' => 45))
             ->end()
             ->with('LastName')

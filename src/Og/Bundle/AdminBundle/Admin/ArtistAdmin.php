@@ -40,7 +40,7 @@ class ArtistAdmin extends Admin
         $datagridMapper
           ->add('firstname')
           ->add('lastname')
-           ->add('birthdate')  
+          ->add('birthdate')  
         ;
     }
 

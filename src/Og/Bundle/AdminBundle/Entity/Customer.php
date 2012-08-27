@@ -169,7 +169,7 @@ class Customer
      * })
      *
      */
-    private $CustomerHasMedia;
+  //  private $CustomerHasMedia;
 
         
     /**
@@ -548,21 +548,21 @@ class Customer
      *
      * @param integer $customerhasmedia
      */
-    public function setCustomerHasMedia(\Og\Bundle\AdminBundle\Entity\CustomerHasMedia $customerhasmedia)
+ /**   public function setCustomerHasMedia(\Og\Bundle\AdminBundle\Entity\CustomerHasMedia $customerhasmedia)
     {
         $this->CustomerHasMedia = $customerhasmedia;
     }
-
+*/
     /**
      * Get CustomerHasMedia
      *
      * @return Og\Bundle\AdminBundle\Entity\CustomerHasMedia 
      */
-    public function getCustomerHasMedia()
+  /**  public function getCustomerHasMedia()
     {
         return $this->CustomerHasMedia;
     }
-    
+    */
     public function __toString() {
         return $this->getFirstname().' '.$this->getLastname();
     }
