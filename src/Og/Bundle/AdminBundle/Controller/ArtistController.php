@@ -30,11 +30,6 @@ class ArtistController extends CRUDController
         $engine = 'pdf';
         
         $facade = FacadeBuilder::create()
-        // set cache
-        //                                               ->setCache('File', array('cache_dir' => __DIR__.'/cache/'))
-        //                                               ->setUseCacheForStylesheetConstraint(false)
-        //                                               ->setUseCacheForStylesheetConstraint(true)
-        //->setDocumentParserType(PHPPdf\Parser\FacadeBuilder::PARSER_MARKDOWN)
                                                ->setEngineType($engine)
                                                ->setEngineOptions(array(
                                                    'format' => 'jpg',

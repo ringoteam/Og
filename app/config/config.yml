@@ -82,7 +82,7 @@ fos_user:
     user_class: Application\Sonata\UserBundle\Entity\User
 
 sonata_admin:
-    title:  Opera Galery
+    title:  Opera Galery Group
     templates:            
       dashboard: OgAdminBundle:Core:dashboard.html.twig
     dashboard:
@@ -105,7 +105,6 @@ sonata_admin:
                  - sonata.admin.currency
                  - sonata.admin.productionstatus
                  - sonata.admin.state
-                 - sonata.user.admin.user
             users:
                 items:
                    - sonata.user.admin.user

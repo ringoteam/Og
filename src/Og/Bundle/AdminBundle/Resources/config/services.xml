@@ -18,7 +18,7 @@
           <tag name="sonata.admin" manager_type="orm" group="Referentiels" label="Artworks"/>
           <argument />
           <argument>Og\Bundle\AdminBundle\Entity\Artwork</argument>
-          <argument>SonataAdminBundle:CRUD</argument>
+          <argument>OgAdminBundle:Artwork</argument>
           <call method="setTranslationDomain">
               <argument>Mon admin oeuvre</argument>
           </call>
