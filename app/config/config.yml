@@ -88,31 +88,32 @@ sonata_admin:
     dashboard:
         blocks:
             # display two dashboard blocks
-            - { position: left,  type: sonata.admin.block.admin_list, settings: { groups: [referentiel,users,media] } }
-            - { position: right, type: sonata.admin.block.admin_list, settings: { groups: [administration] } }
+            - { position: left,  type: sonata.admin.block.admin_list, settings: { groups: [Referentiels,Users] } }
+            - { position: right, type: sonata.admin.block.admin_list, settings: { groups: [Administration, Mediathèque] } }
         groups:
-            referentiel:
+            Referentiels:
                items:
                   - sonata.admin.artist
                   - sonata.admin.artwork
                   - sonata.admin.purchase
                   - sonata.admin.supplier
                   - sonata.admin.customer
-            administration:      
+            
+            Administration:      
                items:
                  - sonata.admin.civility
                  - sonata.admin.country
                  - sonata.admin.currency
                  - sonata.admin.productionstatus
                  - sonata.admin.state
-            users:
+            Users:
                 items:
                    - sonata.user.admin.user
                    - sonata.user.admin.group
-            media:
+            Mediathèque:
                 items:
                    - sonata.media.admin.media
-                
+                   - sonata.media.admin.gallery
 
 sonata_media:
     default_context: default
@@ -122,7 +123,7 @@ sonata_media:
             providers:
                 - sonata.media.provider.image
                 - sonata.media.provider.file
-
+                - sonata.media.provider.youtube
             formats:
                 small: { width: 100 , quality: 70}
                 big:   { width: 500 , quality: 70}
