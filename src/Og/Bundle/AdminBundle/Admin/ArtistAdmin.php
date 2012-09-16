@@ -12,7 +12,7 @@ use Sonata\AdminBundle\Route\RouteCollection;
 class ArtistAdmin extends Admin
 {
     protected function configureRoutes(RouteCollection $collection) {
-        $collection->add('pdfartist', $this->getRouterIdParameter().'/pdfartist'); 
+        $collection->add('pdfartist', $this->getRouterIdParameter().'/pdfartist');
     }
     
     protected function configureFormFields(FormMapper $formMapper)
@@ -25,13 +25,8 @@ class ArtistAdmin extends Admin
             ->add('deathdate', 'birthday', array (
 			'widget' => 'choice',
 			'pattern' => '{{ day }}-{{ month }}-{{ year }',
-			)) 
-            //->add('image', 'file', array('required' => false))
-/**            ->add('image', 'sonata_type_model_list', array('required' => false),
-                array('link_parameters'=>array('context'=>'default',
-               'provider'=>'sonata.media.provider.image')))    
-*/            
-            
+			))
+             ->add('media', 'sonata_type_model', array(), array('edit' => 'list', 'link_parameters' => array('context' => 'news')))
         ;
     }
 
@@ -40,7 +35,7 @@ class ArtistAdmin extends Admin
         $datagridMapper
           ->add('firstname')
           ->add('lastname')
-           ->add('birthdate')  
+          ->add('birthdate')  
         ;
     }
 
@@ -51,7 +46,7 @@ class ArtistAdmin extends Admin
            ->add('lastname')
            ->add('birthdate')
            ->add('deathdate')
-            ->add('image', 'string', array('template' => 'SonataMediaBundle:MediaAdmin:list_image.html.twig'))
+           ->add('media')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),

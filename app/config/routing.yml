@@ -39,6 +39,12 @@ _sonata_admin:
 soanata_user:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
     prefix: /admin
+
+#fix bug si plusieurs "users"
+homepage:
+    pattern: /admin/dashboard
+    defaults: { _controller: SonataAdminBundle:Core:dashboard }
+    
 # Internal routing configuration to handle ESI
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"

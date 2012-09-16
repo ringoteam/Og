@@ -3,6 +3,7 @@
 namespace Og\Bundle\AdminBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+//use Sonata\MediaBundle\Entity\MediaManager;
 
 /**
  * Og\Bundle\AdminBundle\Entity\Artist
@@ -50,11 +51,14 @@ class Artist
     private $deathdate;
 
     /**
-     * @var blob $image
+     * @var media
      *
-     * @ORM\Column(name="image", type="blob", nullable=true)
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Media", cascade={"cascade-all"})
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="media", referencedColumnName="id")
+     * })
      */
-  //  private $image;
+    private $media;
 
     
     /**
@@ -148,25 +152,25 @@ class Artist
     }
     
     /**
-     * Set image
+     * Set media
      *
-     * @param file 
+     * @param integer 
      */
-    /**public function setImage($image)
+    public function setMedia($media)
     {
-        $this->image = $image;
-    }*/
+        $this->media = $media;
+    }
 
     /**
-     * Get image
+     * Get media
      *
-     * @return file
+     * @return integer
      */
-    /*public function getImage()
+    public function getMedia()
     {
-        return $this->image;
+        return $this->media;
     }
-    */
+    
     
     public function __toString() {
         return $this->getFirstname().' '.$this->getLastname();
