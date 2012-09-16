@@ -33,7 +33,7 @@ $loader->registerNamespaces(array(
     'Buzz'          => __DIR__.'/../vendor/buzz/lib',
     'Ps' => __DIR__.'/../vendor/bundles',
     'PHPPdf' => __DIR__.'/../vendor/PHPPdf/lib',
-    'Imagine' => array(__DIR__.'/../vendor/PHPPdf/lib', __DIR__.'/../vendor/PHPPdf/lib/vendor/Imagine/lib'),
+    'Imagine' => array(__DIR__.'/../vendor/imagine/lib',__DIR__.'/../vendor/PHPPdf/lib', __DIR__.'/../vendor/PHPPdf/lib/vendor/Imagine/lib'),
     'Zend' => __DIR__.'/../vendor/PHPPdf/lib/vendor/Zend/library',//If you have used ZF2 packages already, you should skip this entry
     'ZendPdf' => __DIR__.'/../vendor/PHPPdf/lib/vendor/ZendPdf/library',
 ));
