@@ -6,7 +6,7 @@
                     <header>
                         <div height="65px">
                             <div float="right" color="white" width="270px" padding="8px 0" text-align="center" font-size="16px" font-style="bold" margin-bottom="27px" background.color="black" background.radius="15">
-                                Artist : Youcef Nacer
+                                Artist : Boulay Laurent
                             </div>
                         </div>
                     </header>
@@ -23,8 +23,8 @@
                 </placeholders>
                 <div>
                     <div class="invoice-data">
-                        <p>Birth Date: 01-05-1988</p>
-                        <p>Death Date: 21-12-2012</p>
+                        <p>Birth Date: 01-01-1900</p>
+                        <p>Death Date: 02-02-1927</p>
                     </div>
                 </div>
                
@@ -37,11 +37,11 @@
                         <td>Death Date</td>
                     </tr>
                     <tr>
-                        <td class="center">5</td>
-                        <td class="center">Youcef</td>
-                        <td class="center">Nacer</td>
-                        <td class="center">01-05-1988</td>
-                        <td class="center">21-12-2012</td>
+                        <td class="center">8</td>
+                        <td class="center">Boulay</td>
+                        <td class="center">Laurent</td>
+                        <td class="center">01-01-1900</td>
+                        <td class="center">02-02-1927</td>
                     </tr>
                 </table>
 
