@@ -43,7 +43,7 @@ class ArtistAdmin extends Admin
     {
         $listMapper
            ->add('firstname')
-           ->add('lastname')
+           //->add('lastname')
            ->add('birthdate')
            ->add('deathdate')
            ->add('media')

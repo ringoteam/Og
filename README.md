@@ -1,1 +1,1 @@
-OG-prototype
+OG-prototype symfony 2
